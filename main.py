@@ -1,5 +1,9 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import HTMLResponse
+from pathlib import Path
 import json
 
 app = FastAPI()
@@ -11,6 +15,15 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.mount("/static", StaticFiles(directory=Path(__file__).parent / "static"), name="static")
+
+# 2) Корень сайта — index.html
+@app.get("/", include_in_schema=False)
+async def root() -> HTMLResponse:
+    html = (Path(__file__).parent / "templates" / "index.html").read_text(encoding="utf-8")
+    return HTMLResponse(content=html, status_code=200)
+
 
 @app.post("/add_comment")
 async def add_comment(request: Request):
