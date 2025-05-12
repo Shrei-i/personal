@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+            <header>
+                <h1>Эта страничка обо мне</h1>
+            </header>
+        </div>
+        <div class="me">
+            <div class="image-container">
+                <img src="i2.jpg" alt="Моя фотография" class="profile-img">
+                <div class="blok">
+                    <h2>Привет!<br> Меня зовут Дина</h2>
+                </div>
+            </div>
+            <div class="profile">
+                <p>Если кратко, то я студентка НГТУ НЭТИ, а эта веб-страница нужна для того чтобы я смогла изучить основы HTML, CSS и JavaScript в дальнейшем. Если вы видите что здесь написано, то я справилась!</p>
+            </div>
+        </div>
+
+        <ul class = 'navigation'>
+            <li><a href='#persinf'>Личная информация</a></li>
+            <li><a href='#prog'>Программирование</a></li>
+            <li><a href='#hob'>Хобби</a></li>
+        </ul>
+
+        <h2><a name='persinf'>Личная информация</a></h2>
+        <p>Как вы уже знаете меня зовут Дина, мне 19 лет. Учусь на третьем курсе факультета прикладной математики и информатики, не сказать что нравится, но бросать пока не собираюсь. Мне нравятся котики и не нравится осень.</p>
+
+        <h2><a name='prog'>Навыки в программировании</a></h2>
+        <ul class="skills">
+            <li>HTML и CSS</li>
+            <li>JavaScript
+                <br>
+                Есть простенький <a href="https://github.com/Shrei-i/Calculator" target="_blank">калькулятор</a>
+            </li>
+            <li>Python</li> 
+        </ul>
+
+        <h2><a name='hob'>Хобби</a></h2>
+        <ul class="hobby">
+            <li>Рисование
+                <br>
+                С сентября хожу на курсы академического рисунка. Все три часа первого занятия мы рисовали кубик, пожалуй дальше можно и не рассказывать.
+            </li>
+            <li>Катание на роликах
+                <br>
+                Купила ролики около 4 лет назад, когда жила в родном поселке. Найти там ровный асфальт было тем ещё квестом.
+            </li>
+            <li>Сноуборд
+                <br>
+                Это очень круто, главное не забывайте надевать шлем.
+            </li>
+            <li>Компьютерные игры
+                <br>
+                Сейчас играю в ГТА Сан-Андреас
+            </li>
+        </ul>
+    
+
+        
+    <div class="comments-section">
+        <h2>Комментарии</h2>
+        <div id="comments-list">
+                
+        </div>
+        <div class="add-comment">
+            <textarea id="comment-text" placeholder="Напишите комментарий..."></textarea><br>
+            <button onclick="addComment()">Добавить комментарий</button>
+        </div>
+    </div>
+
+        
+
+    <script src="script.js"></script>
+</div>
+</body>
+<footer>
+    <p>&copy; 2024 Баранова Д.И. Все права защищены.</p>
+</footer>
+</html>

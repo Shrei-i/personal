@@ -1,0 +1,218 @@
+@font-face {
+    font-family: Monocraft;
+    src : url("fonts\\Monocraft.otf");
+}
+body {
+    font-family: Monocraft;
+    background-color:#2A1B3D ;
+    color: #e7f3e7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #44318D;
+}
+
+.content{
+    background-image: url('0fb6ad998800d307d8d650b51cb424f4.gif');
+    background-size: cover;
+    height: 450px;
+    background-position: center bottom; 
+    overflow: hidden;
+}
+
+header {
+    text-align: right;
+    margin-left: 400px;
+    margin-right: 40px;
+    padding: 70px 30px 40px ;
+    color: white;
+    background-color: #D83F87 ;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+.me{
+    display: flex;
+}
+
+h2 {
+    margin: 0;
+    color: #e7f3e7;
+    text-align: left;
+    background-color: #D83F87;
+    margin-right: 40%;
+}
+
+.me h2{
+    background-color: #8265a8;
+}
+
+.image-container{
+    position: relative;
+}
+
+.profile-img {
+    position: relative;
+    margin: 40px 20px 20px 50px;
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    
+}
+
+.blok{
+    position: absolute;
+    background-color: #8265a8;
+
+    width: 430px;
+    
+    top: 20px;
+    left: 110px;
+    z-index: 1;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 270px;
+    
+ 
+    
+}
+
+
+.profile{
+
+    margin: 130px 40px 40px 10px;
+    
+}
+.profile p{
+    color: #A4B3B6;
+}
+
+
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    background-color: #2A1B3D; 
+    margin: 20px 0;
+    text-align: center;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 40px;
+    font-weight: bold;
+    
+}
+
+.navigation a:hover {
+    color: #E98074; 
+}
+
+
+
+
+p {
+    line-height: 1.6;
+}
+
+.skills {
+    list-style-type: none;
+    padding: 0;
+    color: #2A1B3D;
+}
+
+.skills li {
+    background-color: #e7f3e7;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 5px solid #2A1B3D;
+}
+
+.hobby li {
+    background-color: #A4B3B6; 
+    padding: 10px;
+    margin: 5px 0;
+    color: #2A1B3D;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Секция комментариев */
+.comments-section {
+    background-color: #2A1B3D;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.comments-section h2 {
+    color: #e7f3e7;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#comments-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.comment {
+    background-color: #44318D;
+    color: #e7f3e7;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border-left: 3px solid #D83F87;
+}
+
+/* Поле ввода комментария */
+.add-comment textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    resize: none;
+    font-family: Monocraft, Arial, sans-serif;
+    border: 1px solid #44318D;
+    border-radius: 4px;
+    background-color: #2A1B3D;
+    color: #e7f3e7;
+    margin-bottom: 10px;
+}
+
+.add-comment textarea::placeholder {
+    color: #A4B3B6;
+}
+
+/* Кнопка добавления комментария */
+.add-comment button {
+    background-color: #D83F87;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-comment button:hover {
+    background-color: #E98074;
+}

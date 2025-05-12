@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20mm;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            page-break-after: always;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        h1, h2, h3 {
+            margin: 0;
+            padding: 10px 0;
+        }
+        .title-page {
+            margin-top: 100px;
+            text-align: center;
+        }
+        .title-page h1 {
+            font-size: 2.5em;
+        }
+        .title-page h2 {
+            font-size: 1.5em;
+        }
+        .report-section {
+            margin: 40px 0;
+        }
+        .report-section h2 {
+            background-color: #44318D;
+            color: white;
+            padding: 10px;
+        }
+        .report-section p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 50px;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        .small-img {
+            max-width: 60%;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="page">
+        <header>
+            <h3>Министерство образования и науки Российской Федерации</h3>
+            <h4>Новосибирский государственный технический университет</h4>
+        </header>
+
+        <div class="title-page">
+            <h2>Лабораторная работа №3</h2>
+            <h3>Программа на JavaScript</h3>
+            <h4>по основам веб-программирования</h4>
+            <p>Факультет: ФПМИ<br>Преподаватель: Цыгулин А.А <br>Группа: ПМИ-22<br>Студент: Баранова Дина</p>
+            <p>Новосибирск 2024</p>
+        </div>
+    </div>
+
+    <!-- Текст отчета -->
+    <div class="page">
+        <div class="report-section">
+            <h3>Цель работы</h3>
+            <p>Познакомиться с языком сценариев JavaScript, добавить на страницу «О себе» интерактивную функцию комментариев. </p>
+        </div>
+
+        <div class="report-section">
+            <h3>Ход Работы</h3>
+
+            <p>Для добавления функционала комментариев, использовались следующие технологии:</p>
+            <ul>
+                <li>JavaScript для добавления комментариев без перезагрузки страницы через манипуляцию DOM;</li>
+                <li>Python с FastAPI для сохранения комментариев на сервере в текстовом файле;</li>
+            </ul>
+            <p>Сначала комментарии сохраняются в текстовом файле 'comments.txt'на сервере, а затем загружаются на страницу при ее загрузке. Это обеспечивает доступность всех добавленных комментариев даже после обновления страницы.</p>
+            <img src="comm2.png" class="small-img" alt="Файл с комментариями">
+            <p>Отображение комментариев на страничке выглядит следующим образом:</p>
+            <img src="comm.png" class="small-img">
+            
+        </div>
+    </div>
+
+  
+    <div class="page">
+        <div class="report-section">
+            <h3>Вывод</h3>
+            <p>В ходе выполнения лабораторной работы были изучены основы JavaScript.</p>
+            <p>С помощью манипуляции DOM реализована возможность динамического добавления комментариев без перезагрузки страницы, а также сохранения данных на сервере. Полученные знания заложили основу для дальнейшего изучения веб-разработки.</p>
+        </div>
+    </div>
+
+</body>
+</html>
