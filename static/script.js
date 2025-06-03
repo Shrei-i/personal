@@ -26,6 +26,17 @@ async function addComment() {
     }
 }
 
+async function hellodocker() {
+    try {
+        const res = await fetch("/hello_docker");
+        if (!res.ok) throw new Error("Ошибка при обращении к /hello_docker");
+        const { message } = await res.json();
+        alert(message);
+    } catch (err) {
+        console.error(err);
+    }
+}   
+
 async function loadComments() {
     try {
         const res  = await fetch("/get_comments");

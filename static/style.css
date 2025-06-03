@@ -216,3 +216,15 @@ footer {
 .add-comment button:hover {
     background-color: #E98074;
 }
+
+.hellodocker{
+    background-color: #D83F87;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+

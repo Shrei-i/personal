@@ -37,7 +37,6 @@ async def add_comment(request: Request):
 
 @app.get("/get_comments")
 async def get_comments():
-    
     try:
         with open("comments.txt", "r", encoding="utf-8") as file:
             comments = file.readlines()
@@ -45,3 +44,4 @@ async def get_comments():
         return {"comments": comments}
     except FileNotFoundError:
         return {"comments": []}  
+
